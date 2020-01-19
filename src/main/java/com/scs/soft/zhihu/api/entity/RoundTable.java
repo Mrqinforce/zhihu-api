@@ -17,6 +17,7 @@ public class RoundTable {
     private String name;
     private String urlToken;
     private String banner;
+    private String tiny_banner;
     private Integer visitsCount;
     private Integer includeCount;
 
