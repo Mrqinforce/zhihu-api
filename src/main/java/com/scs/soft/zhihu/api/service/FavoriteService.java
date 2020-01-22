@@ -24,5 +24,5 @@ public interface FavoriteService {
      *
      * @return List<Favorite>
      */
-    List<Favorite> selectMost();
+    List<Favorite> selectRecent();
 }

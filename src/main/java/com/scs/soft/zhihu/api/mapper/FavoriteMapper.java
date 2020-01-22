@@ -21,7 +21,7 @@ public interface FavoriteMapper {
      * @return List<Favorite>
      */
     @Select("SELECT * FROM t_favorite ORDER BY followers DESC LIMIT 0,4")
-    List<Favorite> selectMost();
+    List<Favorite> selectRecent();
     /**
      * 查询所有收藏
      *

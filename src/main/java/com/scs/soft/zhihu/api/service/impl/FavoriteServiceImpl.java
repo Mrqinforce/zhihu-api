@@ -24,8 +24,8 @@ public class FavoriteServiceImpl implements FavoriteService {
     public List<Map> selectAllFavorite() {
         return favoriteMapper.selectAllFavorite();
     }
+
     @Override
-    public List<Favorite> selectMost() {
-        return favoriteMapper.selectMost();
-    }
+    public List<Favorite> selectRecent() { { return favoriteMapper.selectRecent();
+    }}
 }

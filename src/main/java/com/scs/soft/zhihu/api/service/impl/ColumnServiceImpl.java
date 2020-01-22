@@ -29,4 +29,9 @@ public class ColumnServiceImpl implements ColumnService {
     public List<Column> selectHot() {
         return columnMapper.selectHot();
     }
+    @Override
+    public List<Column> selectColumnsByPage(int currentPage, int count) {
+        int dealCount = (currentPage -1) * count;
+        return columnMapper.selectByPage(dealCount,count);
+    }
 }

@@ -24,4 +24,11 @@ public interface ColumnService {
      * @return List<Column>
      */
     List<Column> selectHot();
+    /**
+     *
+     * @param currentPage
+     * @param count
+     * @return
+     */
+    List<Column> selectColumnsByPage(int currentPage, int count);
 }
